@@ -1,0 +1,33 @@
+21:07:48 **** Build of configuration Debug for project MiniProject2SalahKhaled ****
+make all 
+Building file: ../MiniProject2SalahKhaled.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MiniProject2SalahKhaled.d" -MT"MiniProject2SalahKhaled.o" -c -o "MiniProject2SalahKhaled.o" "../MiniProject2SalahKhaled.c"
+In file included from ../MiniProject2SalahKhaled.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MiniProject2SalahKhaled.c
+ 
+Building target: MiniProject2SalahKhaled.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject2SalahKhaled.map -mmcu=atmega16 -o "MiniProject2SalahKhaled.elf"  ./MiniProject2SalahKhaled.o   
+Finished building target: MiniProject2SalahKhaled.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject2SalahKhaled.elf  >"MiniProject2SalahKhaled.lss"
+Finished building: MiniProject2SalahKhaled.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 MiniProject2SalahKhaled.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5468 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (1.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
